@@ -1,0 +1,17 @@
+2022-03-16 08:52:15.225 DEBUG 70720 --- [http-nio-9221-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v1/scanRules", parameters={}
+2022-03-16 08:52:15.238 DEBUG 70720 --- [http-nio-9221-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#getScanRules(String[])
+2022-03-16 08:52:15.246 DEBUG 70720 --- [http-nio-9221-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-03-16 08:52:15.250 DEBUG 70720 --- [http-nio-9221-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{Golang={com.ouncelabs.languagelite.golang.rules.CommMisconfig=CustomScannersServiceScanRule{ruleNam (truncated)...]
+2022-03-16 08:52:15.297 DEBUG 70720 --- [http-nio-9221-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-03-16 08:52:15.332 DEBUG 70720 --- [http-nio-9221-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v1/scanRules", parameters={}
+2022-03-16 08:52:15.333 DEBUG 70720 --- [http-nio-9221-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#getScanRules(String[])
+2022-03-16 08:52:15.333 DEBUG 70720 --- [http-nio-9221-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json]
+2022-03-16 08:52:15.334 DEBUG 70720 --- [http-nio-9221-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{Golang={com.ouncelabs.languagelite.golang.rules.CommMisconfig=CustomScannersServiceScanRule{ruleNam (truncated)...]
+2022-03-16 08:52:15.339 DEBUG 70720 --- [http-nio-9221-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-03-16 08:52:52.457 DEBUG 70720 --- [http-nio-9221-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/v1/scanFile", parameters={masked}
+2022-03-16 08:52:52.458 DEBUG 70720 --- [http-nio-9221-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.hcl.appscan.customscannersservice.controller.CustomScannersController#runScanFile(MultipartFile, String, int[])
+2022-03-16 08:52:52.461 DEBUG 70720 --- [http-nio-9221-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.hcl.appscan.customscannersservice.controller.CustomScannersControllerAdvice#handleInvalidArgument(IllegalArgumentException)
+2022-03-16 08:52:52.461 DEBUG 70720 --- [http-nio-9221-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-03-16 08:52:52.461 DEBUG 70720 --- [http-nio-9221-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.hcl.appscan.customscannersservice.controller.CustomScannersControllerAdvice$ErrorMessage@2045924 (truncated)...]
+2022-03-16 08:52:52.462 DEBUG 70720 --- [http-nio-9221-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: The following file type is not supported: env]
+2022-03-16 08:52:52.462 DEBUG 70720 --- [http-nio-9221-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 422 UNPROCESSABLE_ENTITY
