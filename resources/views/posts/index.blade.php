@@ -4,6 +4,8 @@
     <div class="flex justify-center">
         <div class="w-8/12 bg-white p-6 rounded-lg">
             @auth
+            <h1 class="text-xl font-bold mb-4">Add a post</h1>
+
                 <form action="{{ route('posts') }}" method="post" class="mb-4">
                     @csrf
                     <div class="mb-4">

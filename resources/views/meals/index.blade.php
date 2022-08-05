@@ -7,7 +7,7 @@
                 <form action="{{ route('meals') }}" method="post" class="mb-4" enctype="multipart/form-data">
                     @csrf
                     <div class="mb-4">
-                        <h2 class="font-bold text-lg p-1">Add a meal</h2>
+                        <h2 class="font-bold text-xl p-1">Add a meal</h2>
                     </div>
 
                     {{-- Meal name --}}
