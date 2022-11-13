@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChefController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MealController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostLikeController;
@@ -10,13 +12,15 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::get('/users/{user:username}/posts', [UserPostController::class, 'index'])->name('users.post');
 Route::get('/users/{user:username}/meals', [UserMealController::class, 'index'])->name('users.meal');
+
+Route::get('/chef', [ChefController::class, 'index'])->name('chef');
+Route::post('/chef', [ChefController::class, 'store']);
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
